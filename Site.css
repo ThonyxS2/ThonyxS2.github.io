@@ -158,8 +158,8 @@ main {
 }
 
 .carousel-item img {
-    max-width: 500px;
-    height: 250px;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.5s ease;
 }
 
@@ -212,8 +212,8 @@ main {
 }
 
 .carousel-item img {
-    max-width: 100%;
-    height: auto;
+    max-width: 500px;
+    height: 250px;
     transition: transform 0.5s ease;
 }
 
@@ -271,13 +271,13 @@ a {
 }
 
 .dark-mode #modo-btn i {
-    content: "\f186"; /* Ícone da lua do Font Awesome */
+    content: "\f186"; 
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 nav li {
@@ -285,5 +285,5 @@ nav li {
 }
 
 .btn-modo {
-    margin-left: 10px; /* Ajusta o espaçamento entre o link e o botão */
+    margin-left: 10px; 
 }
