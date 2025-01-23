@@ -245,3 +245,45 @@ main {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+
+a {
+    color: #000000; /* Um tom de azul mais escuro */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+#modo-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode #modo-btn i {
+    content: "\f186"; /* Ícone da lua do Font Awesome */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+nav li {
+    list-style: none;
+}
+
+.btn-modo {
+    margin-left: 10px; /* Ajusta o espaçamento entre o link e o botão */
+}
