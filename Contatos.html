@@ -5,6 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <link rel="stylesheet" href="Site.css">
+    <style>
+        /* Estilos para a seção de contatos */
+        .contact-section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center; /* Centraliza o título e o parágrafo */
+        }
+
+        .contacts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas */
+            gap: 2rem;
+            justify-items: center; /* Centraliza os itens horizontalmente */
+            margin-top: 2rem; /* Espaço acima dos contatos */
+        }
+
+        .contact {
+            background-color: var(--bg-darker);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+            overflow: hidden; /* Evita que a imagem ultrapasse as bordas */
+        }
+
+        .contact:hover {
+            transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+        }
+
+        .contact img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; /* Mantém a proporção da imagem e preenche o círculo */
+            margin-bottom: 1rem;
+            border: 4px solid var(--primary);
+            box-shadow: 0 2px 4px rgba(0, 255, 204, 0.3);
+        }
+
+        .contact h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact p {
+            color: var(--text-light);
+        }
+        @media (max-width: 768px){
+            .contacts{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,9 +68,6 @@
             <ul>
                 <li><a href="Site.html">Aprender sem custo</a></li>
                 <li><a href="Site.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="Aulas.html">Aulas</a>
-                </li>
                 <li class="dropdown">
                     <a href="#">Serviços</a>
                     <ul class="dropdown-menu">
@@ -40,33 +93,21 @@
 
             <div class="contacts">
                 <div class="contact">
-                    <img src="img/contact1.jpg" alt="Pessoa 1">
-                    <h3>Pessoa 1</h3>
-                    <p>(11) 99999-9999</p>
+                    <img src="img/Anthony.jpg" alt="Pessoa 1">
+                    <h3>Anthony Vinicius Ferreira Vidal</h3>
+                    <p>(92) 98633-0600</p>
                 </div>
 
                 <div class="contact">
-                    <img src="img/contact2.jpg" alt="Pessoa 2">
-                    <h3>Pessoa 2</h3>
-                    <p>(21) 88888-8888</p>
+                    <img src="img/Gloria.jpg" alt="Pessoa 2">
+                    <h3>Glória Ribeiro Da Paz</h3>
+                    <p>(92) 98597-1609</p>
                 </div>
 
                 <div class="contact">
                     <img src="img/contact3.jpg" alt="Pessoa 3">
-                    <h3>Pessoa 3</h3>
-                    <p>(31) 77777-7777</p>
-                </div>
-
-                <div class="contact">
-                    <img src="img/contact4.jpg" alt="Pessoa 4">
-                    <h3>Pessoa 4</h3>
-                    <p>(41) 66666-6666</p>
-                </div>
-
-                <div class="contact">
-                    <img src="img/contact5.jpg" alt="Pessoa 5">
-                    <h3>Pessoa 5</h3>
-                    <p>(51) 55555-5555</p>
+                    <h3>Bruno Hall Rebouças</h3>
+                    <p>(92) 98846-4753</p>
                 </div>
             </div>
         </section>
