@@ -1,110 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home do Site</title>
-    <link rel="stylesheet" href="Site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IABG</title>
+  <link rel="stylesheet" href="Pagina1.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">IABG</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="Aulas.html">Aulas</a></li>
-                <li class="dropdown">
-                    <a href="#">Serviços</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
-                        <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
-                        <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
-                        <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
-                        <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
-                        <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
-                        <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
-                        <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contatos.html">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="welcome-section">
-            <div class="welcome-text">
-                <h1>Olá, seja bem vindo ao IABG</h1>
-                <p>Aprenda o que você quiser de forma gratuita. Nós selecionamos as melhores matérias disponíveis de forma gratuita na internet, para você estudar sem complicação.</p>
-                <a href="Temas.html">
-                    <button>Acessar temas</button>
-                </a>
-            </div>
-            <div class="progress-indicator">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-        </section>
-        <section class="content-section">
-            <h2>Mais visualizados</h2>
-            <div class="category">
-                <h3>Tecnologia da Informação - Programação</h3>
-                <div class="videos">
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=22nd99SLgNA&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
-                            <img src="img/tecnologiaalta1.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8</p>
-                    </div>
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=vmWZ1mfT0bY&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
-                            <img src="img/tecnologiaalta2.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>TENTEI APRENDER PROGRAMAÇÃO DO ZERO | 1#</p>
-                    </div>
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=gMxQ8vxH9Vk&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
-                            <img src="img/tecnologiaalta3.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>Lógica de programação, por onde começar ? (Guia RÁPIDO de estudos completo para INICIANTES)</p>
-                    </div>
+  <!-- Menu de Navegação -->
+  <header class="navbar">
+    <div class="logo">IABG</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">home</a></li>
+        <li><a href="#">aulas</a></li>
+        <li><a href="#">serviços</a></li>
+        <li><a href="#">contatos</a></li>
+      </ul>
+    </nav>
+    <div class="profile-icon">👤</div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <section class="welcome-section">
+      <div>
+        <h1>Olá, seja bem vindo ao IABG</h1>
+        <p>
+          Aprenda o que você quiser de forma gratuita, nós selecionamos os melhores
+          materiais disponíveis de forma gratuita na internet, para você estudar sem
+          complicação
+        </p>
+        <button class="btn-access">Acessar temas</button>
+      </div>
+      <div class="progress-indicator">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Mais visualizados</h2>
+        <div class="category">
+            <h3>Tecnologia da Informação - Programação</h3>
+            <div class="videos">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=22nd99SLgNA&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta1.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Playlist Lógica de programação</p>
+                </div>
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=vmWZ1mfT0bY&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta2.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Curso em Vídeo</p>
+                </div>
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=gMxQ8vxH9Vk&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta3.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Curso de JavaScript do Zero</p>
                 </div>
             </div>
-            <div class="category">
-                <h3>Medicina - Anatomia</h3>
-                <div class="videos">
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=lgfAUxoTPmA&pp=ygUIQW5hdG9taWE%3D">
-                            <img src="img/Anatomiaalta1.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>Introdução à Anatomia</p>
-                    </div>
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=8SunmLyTfbQ&pp=ygUVYW5hdG9taWEgZG8gY29yYcOnw6Nv">
-                            <img src="img/Anatomiaalta2.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>Anatomia e o Coração</p>
-                    </div>
-                    <div class="video">
-                        <a href="https://www.youtube.com/watch?v=bKi5BjVfl4w&pp=ygUTYW5hdG9taWEgZG8gY2VyZWJybw%3D%3D">
-                            <img src="img/Anatomiaalta3.png" class="d-block w-100" alt="Imagem 1" >
-                        </a>
-                        <p>Anatomia do encefálo</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 IABG</p>
-        <div class="footer-links">
-            <a href="#">Sobre o IABG</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Tecnologia da Informação</a>
-            <a href="#">Medicina</a>
         </div>
-    </footer>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 IABG</p>
+    <div class="footer-links">
+        <a href="#">Sobre o IABG</a>
+        <a href="#">Dúvidas</a>
+        <a href="#">Tecnologia da Informação</a>
+    </div>
+</footer>
 </body>
 </html>
-
-
