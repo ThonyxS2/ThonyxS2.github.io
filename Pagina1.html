@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IABG</title>
+  <link rel="stylesheet" href="css/Pagina1.css">
+</head>
+<body>
+  <!-- Menu de Navegação -->
+  <header class="navbar">
+    <div class="logo">IABG</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="Aulas.html">Aulas</a></li>
+        <li class="dropdown">
+          <a href="#">Serviços</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
+            <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
+            <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
+            <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
+            <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
+            <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
+            <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
+            <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
+          </ul>
+        </li>
+        <li><a href="Contatos.html">Contatos</a></li>
+      </ul>
+    </nav>
+      <img id="image-button" src="img/Anthony.jpg"  href="Login.html"> 
+  </header>
+  
+  <main class="main-content">
+    <section class="welcome-section">
+      <div>
+        <h1>Olá, seja bem vindo ao IABG</h1>
+        <p>
+          Aprenda o que você quiser de forma gratuita, nós selecionamos os melhores
+          materiais disponíveis de forma gratuita na internet, para você estudar sem
+          complicação
+        </p>
+        <button id="btn-access" class="btn-access">Acessar temas</button>
+        <script>
+          document.getElementById('btn-access').addEventListener('click', function() {
+            window.location.href = 'Temas.html'; /* Botão funcionando*/
+          });
+
+           // Seleciona a imagem pelo ID
+            const imageButton = document.getElementById('image-button');
+
+            // Adiciona o evento de clique
+            imageButton.addEventListener('click', function () {
+              window.open("Login.html", "_blank"); // Substitua pelo URL do destino
+            });
+        </script>
+      </div>
+      <div class="progress-indicator">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Mais visualizados</h2>
+        <div class="category">
+            <h3>Tecnologia da Informação - Programação</h3>
+            <div class="videos">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=22nd99SLgNA&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta1.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Playlist Lógica de programação</p>
+                </div>
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=vmWZ1mfT0bY&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta2.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Curso em Vídeo</p>
+                </div>
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=gMxQ8vxH9Vk&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                        <img src="img/tecnologiaalta3.png" class="d-block w-100" alt="Imagem 1" >
+                    </a>
+                    <p>Curso de JavaScript do Zero</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 IABG</p>
+    <div class="footer-links">
+        <a href="#">Sobre o IABG</a>
+        <a href="#">Dúvidas</a>
+        <a href="#">Tecnologia da Informação</a>
+    </div>
+</footer>
+</body>
+</html>

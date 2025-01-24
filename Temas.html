@@ -1,134 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temas - IABG</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IABG</title>
+  <link rel="stylesheet" href="css/Temas.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">IABG</a></li>
-                <li><a href="Site.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Serviços</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
-                        <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
-                        <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
-                        <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
-                        <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
-                        <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
-                        <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
-                        <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contatos.html">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">IABG</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Pagina1.html">Home</a></li>
+        <li><a href="Aulas.html">Aulas</a></li>
+        <li class="dropdown">
+          <a href="#">Serviços</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
+            <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
+            <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
+            <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
+            <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
+            <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
+            <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
+            <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
+          </ul>
+        </li>
+        <li><a href="Contatos.html">Contatos</a></li>
+      </ul>
+    </nav>
+    <div class="profile-icon">
+      <button><img id="image-button" src="img/login.png" alt="Login"></button>
+    </div>
+  </header>
 
-    <main class="themes-container">
-        <h1 class="text-center my-4">Escolha seu Tema</h1>
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <section class="welcome-section">
+      <h1>Bem-vindo aos nossos temas</h1>
+      <p>Aqui você encontra materiais organizados para facilitar seus estudos.</p>
+    </section>
 
-        <section class="theme tema-tecnologia">
-            <h2>Tecnologia da Informação</h2>
-            <div id="carouselTecnologia" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.youtube.com/watch?v=TM6ezL7VKck">
-                            <img src="img/Tecnologia da informação 1.png" class="d-block w-100" alt="Imagem 1">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=vkFNqsrjY2E">
-                            <img src="img/Tecnologia 2.png" class="d-block w-100" alt="Imagem 2">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=T6bLOeSY-pw">
-                            <img src="img/tecnologia 3.png" class="d-block w-100" alt="Imagem 3">
-                        </a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecnologia" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnologia" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+    <section class="content-section">
+      <h2 class="section-title">Temas</h2>
+      <div class="category">
+        <h3 class="category-title">Tecnologia da Informação - Programação</h3>
+        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.youtube.com/watch?v=22nd99SLgNA&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta1.png" class="d-block w-100" alt="Playlist Lógica de Programação">
+              </a>
+              <p>Playlist Lógica de Programação</p>
             </div>
-        </section>
-
-        <section class="theme tema-fisica">
-            <h2>Física</h2>
-            <div id="carouselFisica" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.youtube.com/watch?v=Sj3sCRwMc0Q&pp=ygUGZmlzaWNh">
-                            <img src="img/Fisica1.png" class="d-block w-100" alt="Imagem 1">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=wlTa_yTElGM&pp=ygUGRmlzaWNh">
-                            <img src="img/Fisica 3.png" class="d-block w-100" alt="Imagem 2">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=Yt-R80zFwjY&pp=ygUaQSBic2UgcGFyYSBhcHJlbmRlciBmaXNpY2E%3D">
-                            <img src="img/Fisica 2.png" class="d-block w-100" alt="Imagem 3">
-                        </a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFisica" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselFisica" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+            <div class="carousel-item">
+              <a href="https://www.youtube.com/watch?v=vmWZ1mfT0bY&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta2.png" class="d-block w-100" alt="Curso em Vídeo">
+              </a>
+              <p>Curso em Vídeo</p>
             </div>
-        </section>
-
-        <section class="theme tema-legislacao">
-            <h2>Legislação Aplicada à Educação</h2>
-            <div id="carouselLegislacao" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.youtube.com/watch?v=EFmbrp4Dz_U&pp=ygUDTERC">
-                            <img src="img/LDB 1.png" class="d-block w-100" alt="Imagem 1">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=sQDxuBFZFoE&pp=ygUDRWNh">
-                            <img src="img/ECA1.png" class="d-block w-100" alt="Imagem 2">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.youtube.com/watch?v=F5dEqLm68CQ&pp=ygUXY29uc3RpdHVpw6fDo28gZmVkZXJhbCA%3D">
-                            <img src="img/Constituiçãofederal.png" class="d-block w-100" alt="Imagem 3">
-                        </a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLegislacao" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselLegislacao" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+            <div class="carousel-item">
+              <a href="https://www.youtube.com/watch?v=gMxQ8vxH9Vk&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta3.png" class="d-block w-100" alt="Curso de JavaScript do Zero">
+              </a>
+              <p>Curso de JavaScript do Zero</p>
             </div>
-        </ ```html
-        </section>
-    </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+          <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="category">
+        <h3 class="category-title">Medicina - Anatomia</h3>
+        <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.youtube.com/watch?v=22nd99SLgNA&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta1.png" class="d-block w-100" alt="Playlist Lógica de Programação">
+              </a>
+              <p>Playlist Lógica de Programação</p>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.youtube.com/watch?v=vmWZ1mfT0bY&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta2.png" class="d-block w-100" alt="Curso em Vídeo">
+              </a>
+              <p>Curso em Vídeo</p>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.youtube.com/watch?v=gMxQ8vxH9Vk&pp=ygUbdGVjbm9sb2dpYSBkZSBwcm9ncmFtYcOnw6Nv">
+                <img src="img/tecnologiaalta3.png" class="d-block w-100" alt="Curso de JavaScript do Zero">
+              </a>
+              <p>Curso de JavaScript do Zero</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 IABG</p>
+    <div class="footer-links">
+      <a href="#">Sobre o IABG</a>
+      <a href="#">Dúvidas</a>
+      <a href="#">Tecnologia da Informação</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

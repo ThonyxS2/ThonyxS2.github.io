@@ -4,93 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
-    <link rel="stylesheet" href="Site.css">
+    <link rel="stylesheet" href="css/Contatos.css">
     <style>
-        /* Estilos para a seção de contatos */
-        .contact-section {
-            padding: 2rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center; /* Centraliza o título e o parágrafo */
-        }
-
-        .contacts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas */
-            gap: 2rem;
-            justify-items: center; /* Centraliza os itens horizontalmente */
-            margin-top: 2rem; /* Espaço acima dos contatos */
-        }
-
-        .contact {
-            background-color: var(--bg-darker);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-            transition: transform 0.3s ease; /* Transição suave para o efeito hover */
-            overflow: hidden; /* Evita que a imagem ultrapasse as bordas */
-        }
-
-        .contact:hover {
-            transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
-        }
-
-        .contact img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover; /* Mantém a proporção da imagem e preenche o círculo */
-            margin-bottom: 1rem;
-            border: 4px solid var(--primary);
-            box-shadow: 0 2px 4px rgba(0, 255, 204, 0.3);
-        }
-
-        .contact h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .contact p {
-            color: var(--text-light);
-        }
-        @media (max-width: 768px){
-            .contacts{
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="navbar">
+        <div class="logo">IABG</div>
         <nav>
-            <ul>
-                <li><a href="Site.html">IABG</a></li>
-                <li><a href="Site.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Serviços</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
-                        <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
-                        <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
-                        <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
-                        <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
-                        <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
-                        <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
-                        <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contatos.html">Contatos</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="Pagina1.html">Home</a></li>
+            <li><a href="#">Aulas</a></li>
+            <li class="dropdown">
+              <a href="#">Serviços</a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.cursoemvideo.com/cursos/">Curso em Vídeo</a></li>
+                <li><a href="https://www.grancursosonline.com.br/assinatura-ilimitada">Gran Cursos</a></li>
+                <li><a href="https://www.youtube.com/@ProfessorNoslen">Professor Noslen</a></li>
+                <li><a href="https://www.youtube.com/@professorboaro">Professor Boaro</a></li>
+                <li><a href="https://www.youtube.com/@sandrocuriodicasdemat">Sandro Curió</a></li>
+                <li><a href="https://www.youtube.com/@CienciaTodoDia">Ciência Todo Dia</a></li>
+                <li><a href="https://www.youtube.com/@tinocandotv">TinocandoTV</a></li>
+                <li><a href="https://www.youtube.com/@deboraaladim">Debora Aladim</a></li>
+              </ul>
+            </li>
+            <li><a href="Contatos.html">Contatos</a></li>
+          </ul>
         </nav>
-    </header>
-
+          <img id="image-button" src="img/Anthony.jpg"  href="Login.html"> 
+      </header>
+    <br/><br/>
     <main>
         <section class="contact-section">
             <h1>Contatos</h1>
             <p>Confira abaixo os contatos disponíveis:</p>
-
             <div class="contacts">
                 <div class="contact">
                     <img src="img/Anthony.jpg" alt="Pessoa 1">
