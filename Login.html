@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - IABG</title>
-    <link rel="stylesheet" href="Site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login IABG</title>
+  <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <h2>Já é aluno IABG?</h2>
-            <p>Faça login e aproveite</p>
-            <form id="loginForm">
-                <input type="email" id="email" placeholder="E-mail" required>
-                <input type="password" id="password" placeholder="Senha" required>
-                <button type="submit" class="btn">ENTRAR</button>
-                <button type="button" class="btn google">ENTRAR COM GOOGLE</button>
-            </form>
-            <a href="Recuperaçãosenha.html">Primeiro acesso ou esqueceu sua senha?</a>
-        </div>
+  <div class="container">
+    <div class="login-box">
+      <h2>Já é aluno IABG?</h2>
+      <p>Faça seu login e aproveite</p>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Senha">
+        <button type="submit">ENTRAR</button>
+        <button class="google-btn" type="button">ENTRAR COM GOOGLE</button>
+        <a href="Recuperaçãosenha.html">Primeiro acesso/Esqueci Minha Senha</a>
+      </form>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">Sobre o IABG</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Tecnologia da Informação</a>
-            <a href="#">Direito</a>
-            <a href="#">Psicologia</a>
-            <a href="#">Medicina</a>
+    <div class="subjects-box">
+      <h2>Ainda não viu nossas matérias?</h2>
+      <p>Acesse nossos temas:</p>
+      <div class="subjects">
+        <div class="subject">
+          <h3>Assunto_</h3>
+          <p>Tecnologia da Informação</p>
+          <span>Dados, Programação, Cyber Security, Engenharia</span>
         </div>
-    </footer>
+        <div class="subject">
+          <h3>Assunto_</h3>
+          <p>Medicina</p>
+          <span>Anatomia, Bioquímica, Embriologia, Citologia, Patologia</span>
+        </div>
+        <div class="subject">
+          <h3>Assunto_</h3>
+          <p>Direito</p>
+          <span>Penal, Trabalho, Tributário, Civil, Constitucional</span>
+        </div>
+        <div class="subject">
+          <h3>Assunto_</h3>
+          <p>Psicologia</p>
+          <span>Infantil, Hospitalar, Esportiva, Escolar, Jurídica</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-logo">
+      <span>iabg</span>
+    </div>
+    <div class="footer-links">
+      <a href="#">SOBRE O IABG</a>
+      <a href="#">DÚVIDAS</a>
+      <a href="#">TECNOLOGIA DA INFORMAÇÃO</a>
+      <a href="#">DIREITO</a>
+      <a href="#">PSICOLOGIA</a>
+      <a href="#">MEDICINA</a>
+    </div>
+    <div class="footer-contact">
+      <span>REPORTAR BUGS</span>
+      <div class="icons">
+        <a href="#"><img src="email-icon.png" alt="Ícone de Email"></a>
+        <a href="#"><img src="bug-icon.png" alt="Ícone de Bug"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', async function(event) {
